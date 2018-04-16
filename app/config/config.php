@@ -13,3 +13,6 @@
 
   // Site Name
   define('SITENAME', 'Post Share');
+
+  // Application's Version Number
+  define('APPVERSION', '1.0.0');
