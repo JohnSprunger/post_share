@@ -59,6 +59,8 @@ class Database{
                     break;
             }
         }
+
+        $this->stmt->bindValue($param, $value, $type);
     }
 
         // Execute the prepared statement
