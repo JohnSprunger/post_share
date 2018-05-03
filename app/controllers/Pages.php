@@ -1,13 +1,17 @@
 <?php
-  class Pages extends Controller {
+class Pages extends Controller {
     public function __construct(){
 
     }
 
     public function index(){
+        if(isLoggedIn()){
+            redirect('posts');
+        }
+
         $data = [
-            'title' => 'Post Share',
-            'description' => 'A simple social network built with the PrePHase framework'
+            'title' => 'SharePosts',
+            'description' => 'Simple social network built on the TraversyMVC PHP framework'
         ];
 
         $this->view('pages/index', $data);
@@ -15,11 +19,10 @@
 
     public function about(){
         $data = [
-            'title' => 'About This Project',
-            'description' => 'A simple web application to let you share post with other users.' . "<br>" .
-            'This was made as both a learning experience and a way to demonstrate the power of PrePHase!'
+            'title' => 'About Us',
+            'description' => 'App to share posts with other users'
         ];
 
         $this->view('pages/about', $data);
     }
-  }
+}
