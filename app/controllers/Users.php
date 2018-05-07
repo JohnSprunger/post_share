@@ -119,6 +119,7 @@
         }
 
         // Check for user/email
+          echo "Hey i'm here";
         if($this->userModel->findUserByEmail($data['email'])){
           // User found
         } else {
