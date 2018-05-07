@@ -10,8 +10,8 @@ class Pages extends Controller {
         }
 
         $data = [
-            'title' => 'SharePosts',
-            'description' => 'Simple social network built on the PrePHase framework'
+            'title' => 'Post Share',
+            'description' => 'A simple social network built on the PrePHase framework'
         ];
 
         $this->view('pages/index', $data);
@@ -19,8 +19,8 @@ class Pages extends Controller {
 
     public function about(){
         $data = [
-            'title' => 'About Us',
-            'description' => 'App to share posts with other users'
+            'title' => 'About',
+            'description' => 'An app to share posts with other users'
         ];
 
         $this->view('pages/about', $data);
